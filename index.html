@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Graph Algorithm Visualizer </title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title"> Graph Visualizer </div>
+
+            <!-- Graph controls -->
+
+            <div class="control-section">
+
+                <div class="control-section-title"> Graph </div>
+
+                <button class="control-button" id="add-node"> Add Node </button>
+                <button class="control-button" id="add-edge"> Add Edge </button>
+                <button class="control-button" id="remove-node"> Remove Node </button>
+                <button class="control-button" id="remove-edge"> Remove Edge </button>
+                <button class="control-button danger" id="clear"> Clear Graph </button>
+
+            </div>
+
+            <!-- Algorithm controls -->
+
+            <div class="control-section">
+
+                <div class="control-section-title"> Algorithm </div>
+
+                <div class="algorithm-buttons">
+
+                    <button class="algorithm-button" id="bfs"> BFS </button>
+                    <button class="algorithm-button" id="dfs"> DFS </button>
+
+                </div>
+
+            </div>
+
+            <!-- Animation controls -->
+
+            <div class="control-section">
+
+                <div class="control-section-title"> Animation </div>
+
+                <div class="animation-controls">
+
+                    <button class="control-button primary" id="run"> Run </button>
+                    <button class="control-button" id="pause"> Pause </button>
+                    <button class="control-button" id="reset"> Reset </button>
+
+                </div>
+
+            </div>
+
+            <!-- Speed control -->
+
+            <div class="control-section">
+
+                <div class="control-section-title"> Speed </div>
+
+                <div class="speed-control">
+
+                    <div class="speed-label">
+                        <span>Animation speed</span>
+                    </div>
+
+                    <input type="range" id="speed" min="100" max="2000" value="500">
+
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- Main content -->
+
+        <main class="main">
+
+            <div class="canvas-container">
+
+                <canvas id="canvas"></canvas>
+
+            </div>
+
+        </main>
+
+        <!-- Logger -->
+
+        <section class="logger-container">
+
+            <div id="logger"></div>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript entry point -->
+
+    <script type="module" src="./src/main.js"></script>
+
+</body>
+
+</html>

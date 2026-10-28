@@ -1,0 +1,161 @@
+/* ---------- Sidebar ---------- */
+
+.sidebar-title {
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.control-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.control-section-title {
+    margin-bottom: 4px;
+
+    color: var(--text-secondary);
+
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.control-button {
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface-light);
+    color: var(--text);
+
+    text-align: left;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.control-button:hover {
+    background: #252a36;
+    border-color: #3a4050;
+}
+
+.control-button:active {
+    transform: translateY(1px);
+}
+
+.control-button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    font-weight: 600;
+}
+
+.control-button.primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.control-button.danger {
+    color: var(--danger);
+}
+
+
+/* ---------- Algorithm buttons ---------- */
+
+.algorithm-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.algorithm-button {
+    padding: 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface-light);
+    color: var(--text);
+
+    font-weight: 600;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.algorithm-button:hover {
+    background: #252a36;
+}
+
+.algorithm-button.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+
+/* ---------- Animation controls ---------- */
+
+.animation-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.animation-controls .control-button {
+    text-align: center;
+}
+
+
+/* ---------- Speed ---------- */
+
+.speed-control {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.speed-label {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+}
+
+#speed {
+    width: 100%;
+
+    accent-color: var(--accent);
+
+    cursor: pointer;
+}
+
+
+/* ---------- Logger ---------- */
+
+#logger > div {
+    padding: 2px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#logger > div:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "graph-algorithm-visualizer",
+    "version": "1.0.0",
+    "description": "An interactive visualizer for graph algorithms such as BFS and DFS.",
+    "type": "module",
+    "keywords": [
+        "graph",
+        "algorithms",
+        "visualizer",
+        "bfs",
+        "dfs",
+        "javascript"
+    ],
+    "author": "Iva Zivkovic",
+    "license": "MIT"
+}
